@@ -1,0 +1,84 @@
+
+<!doctype>
+<html>
+    <head> 
+        <title>Register Form</title>
+        <style>
+            .container
+            {
+                padding: 16px;
+                border-style: solid;
+                 
+                padding: 0em 25em 0em 25em;
+            }
+            input[type=text], input[type=password], input[type=email] {
+              width: 97%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              display: inline-block;
+              border: none;
+              background: #f1f1f1;
+            }
+            
+            input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+              background-color: #ddd;
+              outline:navy;
+            }
+            .registerbtn {
+              background-color: #0407aa;
+              color: white;
+              padding: 10px 10px;
+              margin: 5px 0;
+              border: none;
+              cursor: pointer;
+              width: 98%;
+              opacity: 0.9;
+            }
+            
+            .registerbtn:hover {
+              opacity: 1;
+            }
+            a {
+              color: dodgerblue;
+            }
+            .signin {
+              background-color: #f1f1f1;
+              text-align: center;
+              padding: 0em 25em 0em 25em;
+              padding: 16px;
+            }
+          </style>
+    </head>
+
+<body>
+    <table align="center" height="100" width="500" bordercolor="#f1f1f1" border="5">
+    <tr><td>
+    <form name="details">
+
+        <h1><center><b>Register<b></center></h1><br>
+        <center>Kindly fill in this form to register.</center><br>
+
+        <label for="uname"><center>Username</center></label>
+        <center><input type="text" name="name" id="uname" placeholder="Enter username"><center>
+        
+
+        <label for="emai"><center><b>Email</b></center></label>
+        <center><input type ="email" name="email" id="emai" placeholder="Enter email"></center><br>
+
+        <label for="passwd"><center><b> Password</b></center></label>
+        <center><input type="password" name="password" id="passwd" placeholder="Enter password"></center>
+
+        <label for="passwd"><center><b> Repeat password</b></center></label>
+        <center><input type="password" name="pwd" id="passwd" placeholder="Repeat password"></center>
+
+              
+        <input type="submit" class="registerbtn" bgcolor="blue" value="Register"><!--Submit</button>-->
+        <br>
+        <p>Already have an account?
+           <a class="signin" href="file:///C:/Users/KIIT/Desktop/register%20form.html" target="_blank">Log in.</a>
+            
+        </form>
+      </td> </tr></table>
+    </body>  
+ </html>
+    </p>

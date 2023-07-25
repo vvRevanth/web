@@ -1,0 +1,96 @@
+
+<!doctype>
+<html>
+    <head> 
+        <title>lab 1</title>
+    </head>
+
+<body>
+    <form name="details" action="javascript:submit()">
+       
+      <h1><center><b><u>Central Library</u><b></center></h1>
+
+        <marquee bgcolor="green">Student Registration Form</marquee>
+        <p>
+
+        <fieldset>
+
+        <legend><b>Student Details</b></legend><br>
+
+        <label for="uname"><b>First Name:</b></label> 
+        <input type="text" name="First Name">
+        <label for="uname"> <b> Middle Name:</b></label> 
+        <input type="text" name="Middle Name">
+        <label for="uname"> <b>Last Name:</b> </label> 
+        <input type="text" name="Last Name"><br><br>
+        
+        <label for="email" ><i>Student's email: </i></label>
+        <input type ="email" name="student's email"><br><br>
+
+        <label for="passwd"><i> Password: </i></label>
+        <input type="password" name="password" id="passwd" ><br><br>
+
+        <label for="passwd"><i> Confirm your password: </i></label>
+        <input type="password" name="pwd" id="passwd"><br><br>
+
+        <label for="gender"> Gender: </label>
+        <input type="radio" name="gen" id="gender">Male
+        <input type="radio" name="gen" id="gender">Female
+        <input type="radio" name="gen" id="gender">other<br><br>
+        
+        Enter your Correspondence Address:<input type="address" Name="Correspondence Address"><br><br>
+        Correspondence Address:<br><textarea>
+        </textarea><br><br>
+         
+        Enter your permanent Address:<input type="address" name="permanent Address"><br><br>
+        Permanent Address:<br><textarea>
+        </textarea><br><br>
+
+         <strong> Domicile State </strong><br>
+        <select name="domicile" id="state" multiple="true">
+            <option>  1. Odisha
+                <option> 2. West Bengal
+                    <option> 3. Jharkhand
+                        <option>   4. Bihar
+                            <option>  5. Uttar Pradesh
+                                <option>  6. Andhra Pradesh
+                                    <option> 7. Telangana
+                                        <option> 8. Maharashtra
+                                            <option>  9. Gujarat
+                                                <option> 10. Punjab
+                                                    <option> 11. Haryana
+        </select><br><br>
+        
+        <input type="submit" value="Sign up"><!--Submit</button>-->
+
+            </fieldset>
+        </form>
+    </p>
+</body> 
+
+<script>
+
+    let submit = () => {
+    let values = "";
+    
+    values += " First Name = " + 
+   document.getElementsByName("First Name")[0].value + "\n";
+   values += " Middle Name = " + 
+   document.getElementsByName("Middle Name")[0].value + "\n";
+   values += " Last Name = " + 
+   document.getElementsByName("Last Name")[0].value + "\n";
+
+    values += " student's email = " + 
+   document.getElementsByName("student's email")[0].value + "\n";
+
+   values += " Correspondence Address = " + 
+   document.getElementsByName("Correspondence Address")[0].value + "\n";
+   values += " permanent Address = " + 
+   document.getElementsByName("permanent Address")[0].value + "\n";
+   
+    alert(values);
+    };
+
+   </script> 
+   </body>  
+</html>
